@@ -48,9 +48,7 @@ const FloatingImage = () => {
   return (
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
-        <p className="font-general text-sm uppercase md:text-[10px]">
-          
-        </p>
+        <p className="font-general text-sm uppercase md:text-[10px]"></p>
 
         <div className="relative size-full">
           <AnimatedTitle
@@ -61,15 +59,18 @@ const FloatingImage = () => {
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-                <img
+                <video
                   ref={frameRef}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="/img/image1.webp"
-                  alt="entrance.webp"
+                  src="/videos/hero-2.mp4"
                   className="object-contain"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
             </div>
