@@ -38,12 +38,7 @@ const About = () => {
           containerClass="mt-5 !text-black text-center"
         />
 
-        <div className="about-subtext">
-          <p>Transforming gaming dreams into reality through cutting-edge development</p>
-          <p className="text-gray-500">
-          Crafting immersive gaming experiences that push the boundaries of imagination
-          </p>
-        </div>
+        
       </div>
 
       <div className="h-dvh w-screen" id="clip">
